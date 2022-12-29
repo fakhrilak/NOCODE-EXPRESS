@@ -35,11 +35,11 @@ with open("../"+'modules/'+name+'.js') as f:
         "req"  : example_req,
         "res"  : example_res
     }
-    loads = json.dumps(newscema)
-    res = requests.post(
-        opensearch_path+'/testjs/_doc/',
-        data=loads.encode(),
-        headers={"Content-Type":"application/json"},
-        verify=False
-    )
-    # pprint.pprint(newscema)
+    # loads = json.dumps(newscema)
+    # res = requests.post(
+    #     opensearch_path+'/testjs/_doc/',
+    #     data=loads.encode(),
+    #     headers={"Content-Type":"application/json"},
+    #     verify=False
+    # )
+    pprint.pprint(newscema)
