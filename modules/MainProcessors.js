@@ -9,7 +9,6 @@ exports.MainProcessors=async(datas)=>{
         ////////////////////////////// Mapper action
         for(let a = 0;a<data.length;a++){
             const [status , func] = await Mapper(data[a]["name"],mapping)
-            console.log(func)
             if (status){
                 data[a]["func"] = func
             }
@@ -28,7 +27,6 @@ exports.MainProcessors=async(datas)=>{
                 }
             }
             const [status , result, result_data] =  await data[i]["func"](par)
-            console.log(result, " ======== result")
             data[i]["result"] = result
             results_process.push({status : status,data:result_data,step:i,nameFunc:data[i]["name"]})
             if (status >= 300){

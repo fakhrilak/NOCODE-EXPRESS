@@ -11,10 +11,6 @@ app.get('/', async(req, res) => {
             {
                 "name" : "sum",
                 "proces" : [20]
-            },
-            {
-                "name" : "sum",
-                "proces" : ["index 0"]
             }
         ]
     

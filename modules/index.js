@@ -1,8 +1,8 @@
-const { SUM } = require("./sum");
+const { sum } = require("./sum");
 
 exports.mapping = [
     {
         "name" : "sum",
-        "func" : SUM
+        "func" : sum
     }
 ]
