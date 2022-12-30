@@ -41,7 +41,7 @@ exports.MainProcessors=async(datas)=>{
         return [200 , {
             message:"Success",
             results_process:results_process,
-            data:results_process[0]["data"]
+            data:results_process[data.length-1]["data"]
         }]
     }catch(err){
         console.log(err)
